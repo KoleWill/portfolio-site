@@ -102,3 +102,17 @@ p{margin:0 0 10px; line-height:1.55}
   .header-grid{grid-template-columns:1fr}
   .card-grid{grid-template-columns:1fr}
 }
+.header-left{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+
+.headshot{
+  width:84px;
+  height:84px;
+  border-radius:16px;
+  object-fit:cover;
+  border:1px solid var(--line);
+  background:rgba(18,26,35,.55);
+}
