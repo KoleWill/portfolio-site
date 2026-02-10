@@ -109,16 +109,55 @@ p{margin:0 0 10px; line-height:1.55}
 }
 
 .headshot{
-  width:120x;
-  height:120px;
+  width:168x;
+  height:168px;
   border-radius:16px;
   object-fit:cover;
   border:1px solid var(--line);
   background:rgba(18,26,35,.55);
 }
+/* Mobile spacing + typography polish */
 @media (max-width: 860px){
+
+  /* Real “margins” on iOS (includes safe-area for notches) */
   .container{
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: calc(22px + env(safe-area-inset-left));
+    padding-right: calc(22px + env(safe-area-inset-right));
+  }
+
+  /* Reduce the giant header text so it doesn’t feel cramped */
+  h1{
+    font-size: 30px;
+    line-height: 1.05;
+  }
+
+  /* Make the header stack cleanly */
+  .header-left{
+    gap: 12px;
+  }
+
+  /* Slightly smaller headshot */
+  .headshot{
+    width: 74px;
+    height: 74px;
+  }
+
+  /* Keep meta text from feeling huge/tight */
+  .subtitle{
+    font-size: 15px;
+  }
+  .meta{
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  /* More comfortable section spacing */
+  .section{
+    padding: 24px 0;
+  }
+
+  /* Cards: give content a touch more breathing room */
+  .card-body{
+    padding: 12px;
   }
 }
