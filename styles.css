@@ -161,3 +161,55 @@ p{margin:0 0 10px; line-height:1.55}
     padding: 12px;
   }
 }
+
+/* Linktree style page */
+.links-page{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:20px;
+}
+
+.links-container{
+  max-width:420px;
+  width:100%;
+  text-align:center;
+}
+
+.links-headshot{
+  width:110px;
+  height:110px;
+  border-radius:20px;
+  object-fit:cover;
+  margin-bottom:18px;
+  border:1px solid var(--line);
+}
+
+.links-subtitle{
+  color:var(--muted);
+  margin-bottom:26px;
+}
+
+.links-buttons{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.link-button{
+  display:block;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid rgba(110,231,255,.35);
+  background:rgba(110,231,255,.08);
+  color:var(--text);
+  font-weight:600;
+  text-decoration:none;
+  transition:all .2s ease;
+}
+
+.link-button:hover{
+  background:rgba(110,231,255,.18);
+}
+
